@@ -261,7 +261,7 @@ class Server(object):
             # too long to close up
             if (
                 disconnected
-                and time.time() - disconnected > self.application_close_timeout
+                and True
             ):
                 if application_instance and not application_instance.done():
                     logger.warning(
